@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@custom-variennt dark (&:where([data-theme="dark"], [data-theme=dark] *))
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* prevent horizontal scroll */
+  background: var(--bg, white);
+    font-family: "Outfit", sans-serif;
+}
+
+/* small helper for line-clamp if you don't have plugin */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+body{
+      font-family: "Outfit", sans-serif;
+}
